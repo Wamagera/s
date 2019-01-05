@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+.column.middle {
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="C:\Users\Kelvin\Desktop\andla/q.jpg" alt="logo" style="float:left;width: 80px;height:80px;" />
+  <h1>Q.COM</h1>
+
+</div>
+
+
+
+  
+  <div class="column middle">
+    <img src="C:\Kelvin\Desktop\andla/q.jpg" alt="skills" style="float:left; width: 507px;height:338  "
+    <h2>Q.COM</h2>
+    <p>Learn More</p>
+    <p>Develop your skills</p>
+    <p>Grow your skill</p>
+    <p>Sign up today and unlock your potential.</p>
+  </div>
+  
+  
+</div>
+  
+</body>
+</html>
